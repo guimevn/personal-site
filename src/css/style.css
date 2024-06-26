@@ -1,0 +1,80 @@
+.nav-site ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-site li {
+    margin-right: 10px;
+}
+
+.nav-site li:not(:last-child)::after {
+    content: "|";
+    margin-left: 10px;
+}
+
+.nav-site a {
+    text-decoration: none;
+    color: #333;
+}
+
+.job-item {
+    margin-bottom: 20px;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.job-header .empresa::after,
+.job-header .cargo::after {
+    content: "|";
+    margin: 0 5px;
+}
+
+.job-header .local:last-child::after {
+    content: "";
+}
+
+.job-date {
+    margin-left: auto;
+}
+
+.empresa {
+    font-weight: bold;
+}
+
+.nav-habilidades ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-habilidades li {
+    margin-right: 10px;
+}
+
+.nav-habilidades li:not(:last-child)::after {
+    content: "|";
+    margin-left: 10px;
+}
+
+.form-contato input,
+.form-contato textarea,
+.form-contato button {
+    display: block;
+    width: 25%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.form-contato button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
